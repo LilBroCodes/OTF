@@ -55,7 +55,7 @@ def decode_binary(filename: str):
 def decode(filename: str):
     ids = decode_binary(filename)
     if not ids[:6] == ['99', '116', '102', '45', '49', '54']:
-        raise TypeError("File not a cff file.")
+        raise TypeError("File not a otf file.")
     str_num = int(ids[6])
     ids = ids[7:]
     str_id = 0
